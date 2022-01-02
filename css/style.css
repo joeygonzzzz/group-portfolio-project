@@ -1,0 +1,28 @@
+body {
+    font-family: Courier New;
+}
+.jumbotron {
+    margin: 0;
+    background-color: rgb(190, 60, 97);
+}
+.jumbotron .container {
+        margin: 0px;
+}
+h1 {
+    font-family: Courier New;
+}
+.row-content {
+    padding: 50px 0;
+    border: 1px solid;
+    min-height: 200px;
+}
+footer {
+    height: 150px;
+    color: white;
+    background-color: rgb(236, 166, 34);
+    padding: 20px, 0;
+}
+
+footer .container {
+    margin: 50px;
+}
