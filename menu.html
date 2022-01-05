@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
@@ -27,7 +27,7 @@
                 </div>
                 <div class="col">
                     <div class="d-flex justify-content-end">
-                        <img   src="img/foodtruck.png" height="300" alt="foodTruck">
+                        <img src="img/foodtruck.png" height="300" alt="foodTruck">
                     </div>
                 </div>
             </div>
@@ -38,36 +38,123 @@
                     </button>
                     <div class="collapse navbar-collapse" id="noodlesNavbar">
                         <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i>Home</a></li>
-                            <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-lg"></i>Menu</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-lg"></i>Contact Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html"><i
+                                        class="fa fa-home fa-lg"></i>Home</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-lg"></i>Menu</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="contactus.html"><i
+                                        class="fa fa-lg"></i>Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            
+
         </div>
     </header>
 
+    <div>
+        <a role="button" class="btn btn-lg btn-info" id="orderButton">Order Online</a>
+    </div>
 
+    <div id="orderModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-black">
+                    <h3 class="modal-title">Online Order</h3>
+                    <h4 class="modal-title">Create Your Own Bowl</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-group row">
+                                <label class="col-sm-6 col-form-label" for="typeNoodles">Choose Your Own Noodles</label>
+                                <div class="col">
+                                    <select name="typeNoodles" id="typeNoodles" class="form-control">
+                                        <option selected>Select...</option>
+                                        <option>Farfalle (Bowtie)</option>
+                                        <option>Conchiglie (Shell)</option>
+                                        <option>Fusilli (Rotini)</option>
+                                    </select>
+                                </div>`
+                            </div>
+                            <!-- Veggies -->
+                            <div class="form-group row">
+                                <label for="veggie" class="col-sm-6 col-form-label">Veggies to add-on:</label>
+                                <div class="col">
+                                    <input type="checkbox">Asparagus
+                                    <input type="checkbox">Broccoli
+                                    <input type="checkbox">Mushrooms
+                                    <input type="checkbox">Onion
+                                    <input type="checkbox">Peas
+                                    <input type="checkbox">Spinach
+                                    <input type="checkbox">Tomatoes
+                                    <input type="checkbox">Zucchini
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="protein" class="col-sm-6 col-form-label">Choose your protein:</label>
+                                <div class="col">
+                                    <input type="checkbox">Grilled Tofu
+                                    <input type="checkbox">Grilled Tempeh
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="sauce" class="col-sm-6 col-form-label">Pick Your Sauce:</label>
+                                <div class="col">
+                                    <input type="checkbox">Creamy Tomato
+                                    <input type="checkbox">Balsamic Blend
+                                    <input type="checkbox">Avocado Pesto
+                                    <input type="checkbox">Creamy Garlic
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="spice" class="col-sm-6 col-form-label">Choose Your Spice Level:</label>
+                                <div class="col">
+                                    <input type="checkbox">No Spice
+                                    <input type="checkbox">Kinda Spicy
+                                    <input type="checkbox">HOT
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="bowl" class="col-sm-6 col-form-label">Choose A Signature Bowl:</label>
+                                <div class="col">
+                                    <input type="checkbox">Veg Out
+                                    <input type="checkbox">Mushroom Madness
+                                    <input type="checkbox">Go Green
+                                    <input type="checkbox">Spicy Tomato
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="site-footer">
         <div class="container">
             <div class="d-flex flex-row">
                 <div class="col">
                     <div class="d-flex justify-content-start">
-                        <a role="button" class="btn btn-link" href="tel:+321-444-8654"><i class="fa fa-phone"></i> 1-321-444-8654</a><br />
-                        <a role="button" class="btn btn-link" href="mailto:sarahsnoodles@hotmail.com"><i class="fa fa-envelope-o"></i> sarahsnoodles@hotmail.com</a>
+                        <a role="button" class="btn btn-link" href="tel:+321-444-8654"><i class="fa fa-phone"></i>
+                            1-321-444-8654</a><br />
+                        <a role="button" class="btn btn-link" href="mailto:sarahsnoodles@hotmail.com"><i
+                                class="fa fa-envelope-o"></i> sarahsnoodles@hotmail.com</a>
                     </div>
                 </div>
                 <div class="col">
                     <div class="d-flex justify-content-end">
                         <h5>Follow Us!</h5>
-                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                </div>
+                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                                class="fa fa-instagram"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                                class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                                class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                                class="fa fa-youtube"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -81,4 +168,5 @@
 
     <script src="js/scripts.js"></script>
 </body>
+
 </html>

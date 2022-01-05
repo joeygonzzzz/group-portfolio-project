@@ -1,6 +1,8 @@
-$(function() {
-    $(".carousel").carousel( { interval: 2000 } );
-    $("#carouselButton").click(function(){
+$(function () {
+    $(".carousel").carousel({
+        interval: 2000
+    });
+    $("#carouselButton").click(function () {
         if ($("#carouselButton").children("i").hasClass("fa-pause")) {
             $(".carousel").carousel("pause");
             $("#carouselButton").children("i").removeClass("fa-pause");
@@ -8,16 +10,10 @@ $(function() {
         } else {
             $(".carousel").carousel("cycle");
             $("#carouselButton").children("i").removeClass("fa-play");
-            $("#carouselButton").children("i").addClass("fa-pause"); 
+            $("#carouselButton").children("i").addClass("fa-pause");
         }
     });
-});
-
-$(function() {
-    $('#reserveButton').click(function() {
-        $('#reserveModal').modal('show');
-    });
-    $('#loginButton').click(function() {
-        $('#loginModal').modal('show');
+    $("#orderButton").click(function () {
+        $("#orderModal").modal('show');
     });
 });
