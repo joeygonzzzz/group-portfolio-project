@@ -2,6 +2,7 @@ body {
     font-family: Courier New;
 }
 .jumbotron {
+    color: white;
     margin: 0;
     background-color: rgb(190, 60, 97);
 }
@@ -25,4 +26,13 @@ footer {
 
 footer .container {
     margin: 50px;
+}
+
+.card {
+    display: inline-block;
+}
+
+#orderbutton {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
